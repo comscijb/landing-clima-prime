@@ -1,0 +1,31 @@
+export const tokens = {
+  colors: {
+    navy950: { value: "#031b33" },
+    navy900: { value: "#062a4f" },
+    navy850: { value: "#083760" },
+    petroleum800: { value: "#0b3d5c" },
+    petroleum700: { value: "#11506f" },
+    cyan400: { value: "#35c7f3" },
+    cyan500: { value: "#16aee3" },
+    ice50: { value: "#f5fbff" },
+    blueGray200: { value: "#c8d7e8" },
+    blueGray400: { value: "#8fa8bf" },
+    blueGray700: { value: "#28445e" },
+    amber400: { value: "#f59e0b" },
+    amber500: { value: "#ea8a04" },
+    green500: { value: "#22c55e" },
+    green600: { value: "#16a34a" },
+    headerGlass: { value: "rgba(3, 27, 51, 0.78)" },
+    whiteAlpha120: { value: "rgba(245, 251, 255, 0.12)" },
+    whiteAlpha180: { value: "rgba(245, 251, 255, 0.18)" },
+    whiteAlpha240: { value: "rgba(245, 251, 255, 0.24)" },
+  },
+  radii: {
+    card: { value: "1.25rem" },
+    pill: { value: "999px" },
+  },
+  shadows: {
+    soft: { value: "0 20px 60px rgba(0, 14, 32, 0.28)" },
+    card: { value: "0 14px 40px rgba(0, 20, 45, 0.22)" },
+  },
+} as const
