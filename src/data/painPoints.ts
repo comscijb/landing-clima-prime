@@ -1,9 +1,9 @@
 export const painPoints = [
-  "Equipamento não gela direito",
-  "Vazamento de água",
-  "Mau cheiro",
+  "Não gela direito",
+  "Pingando água",
+  "Mau cheiro no ambiente",
   "Barulho incomum",
-  "Consumo alto de energia",
+  "Conta de energia alta",
   "Instalação mal feita",
   "Falta de manutenção preventiva",
 ]

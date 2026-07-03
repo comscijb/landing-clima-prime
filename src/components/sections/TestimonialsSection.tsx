@@ -20,9 +20,9 @@ export function TestimonialsSection() {
       <Container maxW="7xl">
         <VStack align="stretch" gap="8">
           <SectionHeader
-            eyebrow="Exemplo de portfólio"
-            title="Exemplo de prova social para portfólio"
-            description="Depoimentos fictícios usados apenas para demonstrar como a landing pode apresentar prova social."
+            eyebrow="Exemplo de prova social"
+            title="Como a página apresentaria prova social"
+            description="Depoimentos demonstrativos usados apenas para mostrar como a landing page poderia reforçar confiança em um negócio real."
           />
           <SimpleGrid columns={{ base: 1, md: 2 }} gap="5">
             {testimonials.map((testimonial) => (

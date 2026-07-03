@@ -12,10 +12,10 @@ export function Footer() {
         >
           <VStack align="start" gap="1">
             <Text color="fg" fontWeight="800">
-              FRIO & CONFORTO
+              CLIMA PRIME REFRIGERAÇÃO
             </Text>
             <Text color="fg.subtle" fontSize="sm">
-              Contato: WhatsApp placeholder
+              Contato: (xx) xxxxx-xxxx
             </Text>
           </VStack>
           <Text color="fg.subtle" fontSize="sm">

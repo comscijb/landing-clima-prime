@@ -2,7 +2,7 @@ import { Box, Container, Flex, Heading, HStack, SimpleGrid, Text, VStack } from 
 import {
   LuBadgeCheck,
   LuBuilding2,
-  LuMapPin,
+  LuCheck,
   LuShieldCheck,
   LuTimer,
   LuUserCheck,
@@ -15,10 +15,10 @@ import { getWhatsAppUrl } from "@/lib/whatsapp"
 
 const trustItems = [
   { title: "Atendimento residencial e comercial", icon: <LuBuilding2 /> },
-  { title: "Orçamento rápido", icon: <LuTimer /> },
+  { title: "Orçamento pelo WhatsApp", icon: <LuTimer /> },
   { title: "Garantia no serviço", icon: <LuShieldCheck /> },
   { title: "Técnicos especializados", icon: <LuUserCheck /> },
-  { title: "Região atendida", icon: <LuMapPin /> },
+  { title: "Atendimento com diagnóstico e orientação", icon: <LuCheck /> },
 ]
 
 export function HeroSection() {
@@ -51,25 +51,24 @@ export function HeroSection() {
             <VStack align="start" gap="5">
               <HStack color="brand.emphasized" fontWeight="800">
                 <LuBadgeCheck />
-                <Text>Atendimento técnico para ar-condicionado</Text>
+                <Text>Técnico em ar-condicionado para residências e empresas</Text>
               </HStack>
               <Heading as="h1" color="fg" fontSize={{ base: "4xl", md: "6xl" }} lineHeight="1.05">
-                Instalação e manutenção de ar-condicionado sem enrolação, com
-                orçamento rápido pelo WhatsApp.
+                Ar-condicionado instalado, limpo ou funcionando de novo com atendimento rápido e orçamento pelo WhatsApp
               </Heading>
               <Text color="fg.muted" fontSize={{ base: "md", md: "lg" }} maxW="680px">
-                Atendimento para residências, comércios e escritórios. Higienização,
-                instalação, limpeza preventiva e correção de problemas com equipe técnica
-                especializada.
+                Atendemos residências, comércios, clínicas, escritórios e restaurantes com instalação, higienização, 
+                manutenção preventiva e correção de falhas. Você explica o problema pelo WhatsApp, recebe uma orientação 
+                inicial e agenda o atendimento com clareza.
               </Text>
             </VStack>
 
             <Flex direction={{ base: "column", sm: "row" }} gap="3" w={{ base: "full", sm: "auto" }}>
               <CTAButton href={getWhatsAppUrl()} variant="whatsapp" external>
-                Pedir orçamento no WhatsApp
+                Pedir orçamento pelo WhatsApp
               </CTAButton>
               <CTAButton href="#servicos" variant="outline">
-                Ver serviços
+                Ver tipos de serviço
               </CTAButton>
             </Flex>
           </VStack>

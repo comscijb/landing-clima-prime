@@ -24,8 +24,10 @@ export function PainSection() {
           gap={{ base: "8", lg: "10" }}
         >
           <SectionHeader
-            title="Ar-condicionado com problema vira prejuízo rápido."
-            description="Quando o equipamento para, gela pouco, pinga água ou começa a consumir mais energia, adiar a manutenção pode aumentar o custo do conserto e comprometer o conforto de clientes, funcionários ou família."
+            title="Quando o ar-condicionado falha, o desconforto aparece na hora. O prejuízo vem depois."
+            description="Um aparelho que não gela direito, pinga água, faz barulho ou está sem manutenção pode aumentar o consumo de energia,
+             comprometer o conforto do ambiente e gerar um conserto mais caro depois. Em empresas, o problema é ainda maior: cliente incomodado,
+              equipe desconfortável e operação prejudicada em horários críticos."
           />
           <SimpleGrid columns={{ base: 1, sm: 2 }} gap="3">
             {painPoints.map((point, index) => {

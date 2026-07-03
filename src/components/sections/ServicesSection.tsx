@@ -42,7 +42,8 @@ export function ServicesSection() {
           <SectionHeader
             align="center"
             eyebrow="Nossos serviços"
-            title="Soluções completas para seu conforto"
+            title="Serviços para manter seu ambiente climatizado e evitar dor de cabeça"
+            description="Do primeiro diagnóstico ao teste final, o atendimento é pensado para resolver o problema com clareza, segurança e orientação técnica."
           />
           <SimpleGrid columns={{ base: 1, md: 2, xl: 3 }} gap="5">
             {services.map((service) => (

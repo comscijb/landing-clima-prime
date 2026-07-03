@@ -21,11 +21,11 @@ export function FinalCTASection() {
         <SimpleGrid alignItems="center" columns={{ base: 1, lg: 2 }} gap={{ base: "8", lg: "10" }}>
           <VStack align="start" gap="6">
             <Heading as="h2" color="fg" size={{ base: "2xl", md: "4xl" }}>
-              Precisa instalar, limpar ou consertar seu ar-condicionado?
+              Seu ar-condicionado precisa de atenção hoje?
             </Heading>
             <Text color="fg.muted" fontSize={{ base: "md", md: "lg" }} maxW="620px">
-              Envie uma mensagem, explique o problema e receba uma orientação inicial para
-              orçamento.
+              Envie uma mensagem, explique o problema e receba uma orientação inicial.
+               A equipe avalia o caso, informa o melhor caminho e agenda o atendimento conforme disponibilidade.
             </Text>
             <CTAButton href={getWhatsAppUrl()} variant="whatsapp" external fullOnMobile>
               Chamar no WhatsApp agora

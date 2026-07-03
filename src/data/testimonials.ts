@@ -3,16 +3,23 @@ import type { Testimonial } from "@/types/testimonial"
 export const testimonials: Testimonial[] = [
   {
     name: "Juliana M.",
-    role: "Escritório de Design",
+    role: "Cliente residencial",
     quote:
-      "Solicitei a limpeza de dois aparelhos no escritório. O atendimento foi rápido e o ar voltou a gelar melhor.",
+      "Meu ar-condicionado estava pingando dentro da sala. Chamei pelo WhatsApp, mandei fotos e consegui agendar o atendimento. O técnico explicou o problema e deixou tudo funcionando.",
     isPortfolioExample: true,
   },
   {
     name: "Ricardo A.",
-    role: "Cliente residencial",
+    role: "Escritório comercial",
     quote:
-      "Consegui orçamento pelo WhatsApp e agendei a instalação para a mesma semana.",
+      "Precisávamos limpar os aparelhos do escritório sem interromper a rotina da equipe. O atendimento foi organizado, rápido e com orientação para a próxima manutenção.",
+    isPortfolioExample: true,
+  },
+  {
+    name: "Marina C.",
+    role: "Comércio local",
+    quote:
+      "Nosso salão ficava desconfortável nos dias mais quentes. Depois da manutenção, os aparelhos voltaram a gelar melhor e conseguimos planejar a limpeza periódica.",
     isPortfolioExample: true,
   },
 ]

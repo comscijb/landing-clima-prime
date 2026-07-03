@@ -28,8 +28,8 @@ export function OfferSection() {
               {offer.name}
             </Heading>
             <Text color="fg.muted">
-              Processo completo, transparente e com orientação técnica do primeiro
-              contato ao teste final.
+              Um processo completo para quem precisa instalar, limpar ou corrigir problemas no ar-condicionado
+               com atendimento claro do primeiro contato ao teste final.
             </Text>
           </VStack>
 

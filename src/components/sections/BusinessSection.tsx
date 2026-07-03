@@ -1,5 +1,5 @@
 import { Box, Container, HStack, SimpleGrid, VStack } from "@chakra-ui/react"
-import { LuClipboardList, LuMessagesSquare, LuTimer } from "react-icons/lu"
+import { LuClipboardList, LuMessagesSquare, LuReceipt, LuTimer } from "react-icons/lu"
 
 import { CTAButton } from "@/components/common/CTAButton"
 import { PlaceholderImage } from "@/components/common/PlaceholderImage"
@@ -11,6 +11,7 @@ const benefits = [
   { title: "Planos mensais personalizados", icon: <LuClipboardList /> },
   { title: "Atendimento prioritário", icon: <LuTimer /> },
   { title: "Relatórios de acompanhamento", icon: <LuMessagesSquare /> },
+  { title: "Menos paradas inesperadas", icon: <LuReceipt /> },
 ]
 
 export function BusinessSection() {
@@ -34,8 +35,10 @@ export function BusinessSection() {
           />
           <VStack align="stretch" gap="6" style={{ width: "100%" }} w="full">
             <SectionHeader
-              title="Manutenção para comércios, clínicas, escritórios e restaurantes."
-              description="Ambientes comerciais dependem de climatização estável para atender clientes, equipe e pacientes. A manutenção preventiva reduz falhas, melhora o conforto e evita paradas em horários críticos."
+              title="Seu negócio não pode perder cliente por causa de um ambiente quente ou aparelho parado."
+              description="Em comércios, clínicas, escritórios e restaurantes, climatização não é apenas conforto. 
+              Ela impacta a experiência do cliente, a produtividade da equipe e o funcionamento da operação.
+               A manutenção preventiva ajuda a reduzir falhas, evitar emergências e manter os ambientes prontos para atender."
             />
             <Box w="full">
               <CTAButton
@@ -44,7 +47,7 @@ export function BusinessSection() {
                 external
                 fullOnMobile
               >
-                Solicitar orçamento para empresa
+                Solicitar plano para empresa
               </CTAButton>
             </Box>
             <HStack align="start" gap="5" flexWrap="wrap">
