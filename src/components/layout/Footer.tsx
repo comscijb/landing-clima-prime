@@ -18,9 +18,14 @@ export function Footer() {
               Contato: (xx) xxxxx-xxxx
             </Text>
           </VStack>
-          <Text color="fg.subtle" fontSize="sm">
-            Projeto fictício para portfólio. Marca e depoimentos são exemplos.
-          </Text>
+          <VStack align={{ base: "start", md: "end" }} gap="1" maxW="640px">
+            <Text color="fg.muted" fontSize="sm" fontWeight="700" textAlign={{ base: "left", md: "right" }}>
+              Clima Prime Refrigeração: instalação, higienização e manutenção de ar-condicionado para residências e empresas.
+            </Text>
+            <Text color="fg.subtle" fontSize="sm" textAlign={{ base: "left", md: "right" }}>
+              Projeto fictício criado para portfólio. Marca, imagens, contatos e depoimentos são exemplos demonstrativos.
+            </Text>
+          </VStack>
         </Flex>
       </Container>
     </Box>
