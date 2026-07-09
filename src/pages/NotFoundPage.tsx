@@ -9,11 +9,11 @@ export function NotFoundPage() {
     <PageShell>
       <VStack align="start" gap="4">
         <Heading as="h1" size="lg">
-          Pagina nao encontrada
+          Pagina não encontrada
         </Heading>
-        <Text color="fg.muted">O caminho solicitado nao existe.</Text>
+        <Text color="fg.muted">O caminho solicitado não existe.</Text>
         <Button asChild colorPalette="blue" variant="outline">
-          <Link to={routes.home}>Voltar ao inicio</Link>
+          <Link to={routes.home}>Voltar ao início</Link>
         </Button>
       </VStack>
     </PageShell>

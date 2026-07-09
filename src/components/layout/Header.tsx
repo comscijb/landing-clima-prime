@@ -1,10 +1,16 @@
-import { Box, Container, Flex, HStack, Text, VStack, Image } from "@chakra-ui/react"
-import { FaWhatsapp } from "react-icons/fa"
-import { CTAButton } from "@/components/common/CTAButton"
+import { Box, Container, Flex, HStack, Text, VStack, Image, Icon, IconButton, Stack, Link, useMediaQuery  } from "@chakra-ui/react"
 import { navigationItems } from "@/data/navigation"
+import { FiMenu, FiX } from "react-icons/fi"
+import { useState } from "react"
+import { CTAButton } from "../common/CTAButton"
 import { getWhatsAppUrl } from "@/lib/whatsapp"
+import { FaWhatsapp } from "react-icons/fa"
 
 export function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const closeMobileMenu = () => setIsMobileMenuOpen(false)
+  const [isDesktop] = useMediaQuery(["(min-width: 1080px)"])
+
   return (
     <Box
       as="header"
@@ -52,12 +58,81 @@ export function Header() {
             ))}
           </HStack>
 
-          <CTAButton href={getWhatsAppUrl()} variant="whatsapp" external>
-            <HStack gap="2">
-              <FaWhatsapp />
-              <Text display={{ base: "none", sm: "inline" }}>WhatsApp</Text>
-            </HStack>
-          </CTAButton>
+          {isDesktop && (
+            <CTAButton href={getWhatsAppUrl()} variant="whatsapp" external>
+              <HStack gap="2">
+                <FaWhatsapp />
+                <Text display={{ base: "none", sm: "inline" }}>WhatsApp</Text>
+              </HStack>
+            </CTAButton>
+          )}
+          
+          <Box display={{ base: "block", md: "none" }} position="relative">
+            <IconButton
+              aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-navigation"
+              variant="ghost"
+              color="fg"
+              border="1px solid"
+              borderColor="border.muted"
+              rounded="full"
+              onClick={() => setIsMobileMenuOpen((current) => !current)}
+              _hover={{ bg: "bg.elevated", color: "brand.fg" }}
+            >
+              <Icon as={isMobileMenuOpen ? FiX : FiMenu} boxSize="5" />
+            </IconButton>
+
+            {isMobileMenuOpen && (
+              <Stack
+                id="mobile-navigation"
+                as="nav"
+                aria-label="Navegação mobile"
+                position="absolute"
+                top="calc(100% + 12px)"
+                right="0"
+                zIndex="dropdown"
+                w="min(76vw, 260px)"
+                gap="1"
+                p="3"
+                rounded="2xl"
+                border="1px solid"
+                borderColor="border.muted"
+                bg="bg.canvas"
+                boxShadow="elevated"
+              >
+                {navigationItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    px="3"
+                    py="2.5"
+                    rounded="xl"
+                    color="fg.muted"
+                    fontSize="sm"
+                    fontWeight="700"
+                    transition="all 0.2s ease-in"
+                    onClick={closeMobileMenu}
+                    _hover={{
+                      bg: "bg.elevated",
+                      color: "brand.fg",
+                      textDecoration: "none",
+                    }}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+
+                <CTAButton href={getWhatsAppUrl()} variant="whatsapp" external>
+                  <HStack gap="2">
+                    <FaWhatsapp />
+                    <Text display={{ base: "inline", sm: "inline" }}>WhatsApp</Text>
+                  </HStack>
+                </CTAButton>
+              </Stack>
+            )}
+          </Box>
+          
         </Flex>
       </Container>
     </Box>

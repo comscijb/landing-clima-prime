@@ -8,7 +8,7 @@ const stepIcons = [LuMessageCircle, LuClipboardCheck, LuCalendarCheck, LuShieldC
 
 export function ProcessSection() {
   return (
-    <Box bg="bg.elevated" id="atendimento" py={{ base: "12", md: "20" }}>
+    <Box bg="bg.elevated" id="processo" py={{ base: "12", md: "20" }}>
       <Container maxW="7xl">
         <VStack align="center" gap="10" >
           <SectionHeader align="center" title="Como funciona o atendimento" />
